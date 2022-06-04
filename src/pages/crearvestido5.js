@@ -32,7 +32,7 @@ function validate(input) {
 const CreateDress = () => {
   const createnewDress = async () => {
     try {
-      await fetch("http://localhost:3000/api/tasks/vestido5", {
+      await fetch("https://benve-bd.vercel.app/vestido5", {
         method: "POST",
         body: JSON.stringify(input),
         headers: {
