@@ -1,13 +1,6 @@
-import IndexDesktop from "../components/desktop/IndexDesktop";
-import IndexPhone from "../components/mobile/IndexPhone";
 import Head from "next/head";
 import Header from "../components/desktop/HeaderDesktop";
 import router from "next/router";
-
-//import handler from "./api/tasks";
-import { useEffect, useState } from "react";
-
-//handler();
 
 const productsRetazos = [
   {
@@ -482,8 +475,6 @@ export default function Home({ products }) {
     </div>
   );
 }
-
-//NOTA: usar cloudinary para las imagenes, que las comprime y no pierden calidad
 
 // export async function getServerSideProps(context) {
 //   // const products = await fetch("https://fakestoreapi.com/products").then(

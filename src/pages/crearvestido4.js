@@ -178,18 +178,6 @@ const CreateDress = () => {
       {errors.image4 && (
         <p className="flex danger mr-16 text-xs justify-end">{errors.image4}</p>
       )}
-      <div className="ml-6 mt-1 text-sm">image4 *</div>
-      <input
-        className="mx-4 w-full inputStyle flex items-center justify-center  "
-        placeholder="image4"
-        type="text"
-        name="image4"
-        value={input.image4}
-        onChange={(e) => handleInputChange(e)}
-      />
-      {errors.image4 && (
-        <p className="flex danger mr-16 text-xs justify-end">{errors.image4}</p>
-      )}
 
       <div className="ml-6 mt-1 text-sm">rating *</div>
       <input
