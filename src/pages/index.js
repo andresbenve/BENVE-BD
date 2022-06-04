@@ -410,7 +410,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido1");
+          router.push("https://benve-bd.vercel.app/crearvestido1");
         }}
       >
         Crear 1 vestido
@@ -418,7 +418,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido2");
+          router.push("https://benve-bd.vercel.app/crearvestido2");
         }}
       >
         Crear 2 vestido
@@ -426,7 +426,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido3");
+          router.push("https://benve-bd.vercel.app/crearvestido3");
         }}
       >
         Crear 3 vestido
@@ -434,7 +434,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido4");
+          router.push("https://benve-bd.vercel.app/crearvestido4");
         }}
       >
         Crear 4 vestido
@@ -442,7 +442,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido5");
+          router.push("https://benve-bd.vercel.app/crearvestido5");
         }}
       >
         Crear 5 vestido
@@ -450,7 +450,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido6");
+          router.push("https://benve-bd.vercel.app/crearvestido6");
         }}
       >
         Crear 6 vestido
@@ -458,7 +458,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido7");
+          router.push("https://benve-bd.vercel.app/crearvestido7");
         }}
       >
         Crear 7 vestido
@@ -466,7 +466,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido8");
+          router.push("https://benve-bd.vercel.app/crearvestido8");
         }}
       >
         Crear 8 vestido
@@ -474,7 +474,7 @@ export default function Home({ products }) {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("http://localhost:3000/crearvestido9");
+          router.push("https://benve-bd.vercel.app/crearvestido9");
         }}
       >
         Crear 9 vestido
