@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/desktop/HeaderDesktop";
 import router from "next/router";
+import { useEffect, useState } from "react";
 
 const productsRetazos = [
   {
@@ -368,7 +369,7 @@ const productsVariados = [
   },
 ];
 
-export default function Home({ products }) {
+export default function Home() {
   const [isDesktop, setDesktop] = useState(false);
 
   useEffect(() => {
@@ -498,14 +499,3 @@ export default function Home({ products }) {
 //     },
 //   };
 // }
-
-// // para probar base de datos consumida desde el cluster de mongo db en la nube
-export async function getServerSideProps() {
-  const res = await fetch("https://benve-rho.vercel.app/api/tasks");
-  const products = await res.json();
-  return {
-    props: {
-      products,
-    },
-  };
-}
