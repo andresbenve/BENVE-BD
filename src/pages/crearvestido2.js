@@ -1,6 +1,7 @@
 import router from "next/router";
 import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+'
 
 function validate(input) {
   const errors = {};
@@ -32,7 +33,7 @@ function validate(input) {
 const CreateDress = () => {
   const createnewDress = async () => {
     try {
-      await fetch("https://benve-bd.vercel.app/vestido2", {
+      await fetch("https://benve-bd.vercel.app/api/tasks/vestido2", {
         method: "POST",
         body: JSON.stringify(input),
         headers: {
