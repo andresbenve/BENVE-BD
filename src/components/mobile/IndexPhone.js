@@ -241,7 +241,7 @@ export async function getServerSideProps(context) {
         "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
       category: "jewelery",
       image: [
-        "https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/vestidosBenve/vestidoMulticolor.png",
+        "/api/tasks",
         "https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/vestidosBenve/vestidoMulticolor.png",
         "https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/vestidosBenve/vestidoMulticolor.png",
         "https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/vestidosBenve/vestidoMulticolor.png",

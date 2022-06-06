@@ -262,6 +262,16 @@ const CreateDress = () => {
       >
         Sumbit New Dress
       </button>
+      <button
+        className="button m-10"
+        onClick={() => {
+          router.push("/");
+        }}
+        type="submit"
+        primary
+      >
+        ← Atras
+      </button>
       {/* NOTA: cuando la persona hace la compra mando un post con los datos del formulario | lo que la persona compro | el metodo de envio que la persona alla elegido */}
     </form>
   );
