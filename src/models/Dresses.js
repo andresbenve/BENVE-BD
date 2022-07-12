@@ -28,5 +28,6 @@ const dressesSchema = new Schema({
   video: {
     type: String,
   },
+  code: "3699570",
 });
 export default models.Dresses || model("Dresses", dressesSchema);
