@@ -34,20 +34,21 @@ const dressesSchema = new Schema({
   },
 });
 
-// dressesSchema.virtual("id").get(function () {
-//   return this._id.toHexString();
-// });
-
-// dressesSchema.set("toJSON", {
-//   virtuals: true,
-// });
+dressesSchema.virtual("id").get(function () {
+  return this._id.toHexString();
+});
 
 dressesSchema.set("toJSON", {
   virtuals: true,
-  versionKey: false,
-  transform: function (doc, ret) {
-    delete ret._id;
-  },
 });
 
-export default models.Dresses || model("Dresses", dressesSchema);
+// dressesSchema.set("toJSON", {
+//   virtuals: true,
+//   versionKey: false,
+//   transform: function (doc, ret) {
+//     delete ret._id;
+//   },
+// });
+
+//export default models.Dresses || model("Dresses", dressesSchema);
+export default model("Dresses", dressesSchema);
