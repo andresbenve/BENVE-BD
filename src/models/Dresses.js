@@ -33,4 +33,13 @@ const dressesSchema = new Schema({
     default: 3699570,
   },
 });
+
+dressesSchema.virtual("id").get(function () {
+  return this._id.toHexString();
+});
+
+dressesSchema.set("toJSON", {
+  virtuals: true,
+});
+
 export default models.Dresses || model("Dresses", dressesSchema);
