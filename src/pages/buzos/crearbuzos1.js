@@ -32,7 +32,7 @@ function validate(input) {
 const CreateSweater = () => {
   const createnewSweater = async () => {
     try {
-      await fetch("https://benve-bd.vercel.app/api/tasks/buzos/buzo1", {
+      await fetch("https://benve-bd.vercel.app/api/buzos/buzo1", {
         method: "POST",
         body: JSON.stringify(input),
         headers: {

@@ -57,5 +57,5 @@ dressesSchema.set("toJSON", {
 //   },
 // });
 
-//export default models.Dresses || model("Dresses", dressesSchema);
-export default model("Dresses", dressesSchema);
+export default models.Dresses || model("Dresses", dressesSchema);
+//export default model("Dresses", dressesSchema);

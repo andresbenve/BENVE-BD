@@ -32,7 +32,7 @@ function validate(input) {
 const CreateSweater = () => {
   const createnewSweater = async () => {
     try {
-      await fetch("http://localhost:3000/api/tasks/buzos/buzo2", {
+      await fetch("http://localhost:3000/api/buzos/buzo2", {
         method: "POST",
         body: JSON.stringify(input),
         headers: {

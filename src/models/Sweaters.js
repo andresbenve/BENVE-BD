@@ -26,17 +26,13 @@ const sweatersSchema = new Schema({
       },
     ],
   },
-  size: {
-    type: String,
-    default: "M",
-  },
   rating: Number,
   video: {
     type: String,
   },
   code: {
     type: Number,
-    default: 3699570,
+    default: 3699569,
   },
 });
 
@@ -56,5 +52,5 @@ sweatersSchema.set("toJSON", {
 //   },
 // });
 
-//export default models.Sweaters || model("Sweaters", sweatersSchema);
-export default model("Sweaters", sweatersSchema);
+export default models.Sweaters || model("Sweaters", sweatersSchema);
+//export default model("Sweaters", sweatersSchema);
