@@ -412,7 +412,7 @@ export default function Home() {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("https://benve-bd.vercel.app/CrearBuzo");
+          router.push("https://benve-bd.vercel.app/crearBuzo");
         }}
       >
         Crear Buzo
