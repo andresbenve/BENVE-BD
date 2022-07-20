@@ -32,7 +32,7 @@ function validate(input) {
 const CreateDress = () => {
   const createnewDress = async () => {
     try {
-      await fetch("https://benve-bd.vercel.app/api/tasks/vestido9", {
+      await fetch("https://benve-bd.vercel.app/api/tasks/vestidos/vestido6", {
         method: "POST",
         body: JSON.stringify(input),
         headers: {
@@ -49,15 +49,13 @@ const CreateDress = () => {
     price: "",
     description: "",
     category: "",
+
     image1: "",
     image2: "",
     image3: "",
     image4: "",
     image5: "",
     image6: "",
-    image7: "",
-    image8: "",
-    image9: "",
     rating: "",
     video: "",
   });
@@ -206,40 +204,6 @@ const CreateDress = () => {
       />
       {errors.image6 && (
         <p className="flex danger mr-16 text-xs justify-end">{errors.image6}</p>
-      )}
-      <div className="ml-6 mt-1 text-sm">image7 *</div>
-      <input
-        className="mx-4 w-full inputStyle flex items-center justify-center  "
-        placeholder="image7"
-        type="text"
-        name="image7"
-        value={input.image7}
-        onChange={(e) => handleInputChange(e)}
-      />
-      {errors.image7 && (
-        <p className="flex danger mr-16 text-xs justify-end">{errors.image7}</p>
-      )}
-      <div className="ml-6 mt-1 text-sm">image8 *</div>
-      <input
-        className="mx-4 w-full inputStyle flex items-center justify-center  "
-        placeholder="image8"
-        type="text"
-        name="image8"
-        value={input.image8}
-        onChange={(e) => handleInputChange(e)}
-      />
-
-      <div className="ml-6 mt-1 text-sm">image9 *</div>
-      <input
-        className="mx-4 w-full inputStyle flex items-center justify-center  "
-        placeholder="image9"
-        type="text"
-        name="image9"
-        value={input.image9}
-        onChange={(e) => handleInputChange(e)}
-      />
-      {errors.image9 && (
-        <p className="flex danger mr-16 text-xs justify-end">{errors.image9}</p>
       )}
       <div className="ml-6 mt-1 text-sm">rating *</div>
       <input

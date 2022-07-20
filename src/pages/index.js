@@ -404,74 +404,10 @@ export default function Home() {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido1");
+          router.push("https://benve-bd.vercel.app/crearVestido");
         }}
       >
-        Crear 1 vestido
-      </button>
-      <button
-        className="button m-4 mt-20"
-        onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido2");
-        }}
-      >
-        Crear 2 vestido
-      </button>
-      <button
-        className="button m-4 mt-20"
-        onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido3");
-        }}
-      >
-        Crear 3 vestido
-      </button>
-      <button
-        className="button m-4 mt-20"
-        onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido4");
-        }}
-      >
-        Crear 4 vestido
-      </button>
-      <button
-        className="button m-4 mt-20"
-        onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido5");
-        }}
-      >
-        Crear 5 vestido
-      </button>
-      <button
-        className="button m-4 mt-20"
-        onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido6");
-        }}
-      >
-        Crear 6 vestido
-      </button>
-      <button
-        className="button m-4 mt-20"
-        onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido7");
-        }}
-      >
-        Crear 7 vestido
-      </button>
-      <button
-        className="button m-4 mt-20"
-        onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido8");
-        }}
-      >
-        Crear 8 vestido
-      </button>
-      <button
-        className="button m-4 mt-20"
-        onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearvestido9");
-        }}
-      >
-        Crear 9 vestido
+        Crear Vestido
       </button>
     </div>
   );

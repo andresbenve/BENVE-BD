@@ -32,7 +32,7 @@ function validate(input) {
 const CreateDress = () => {
   const createnewDress = async () => {
     try {
-      await fetch("https://benve-bd.vercel.app/api/tasks/vestido8", {
+      await fetch("https://benve-bd.vercel.app/api/tasks/vestidos/vestido4", {
         method: "POST",
         body: JSON.stringify(input),
         headers: {
@@ -49,14 +49,11 @@ const CreateDress = () => {
     price: "",
     description: "",
     category: "",
-    image6: "",
-    image7: "",
-    image8: "",
     image1: "",
     image2: "",
     image3: "",
     image4: "",
-    image5: "",
+
     rating: "",
     video: "",
   });
@@ -133,7 +130,6 @@ const CreateDress = () => {
           {errors.category}
         </p>
       )}
-
       <div className="ml-6 mt-1 text-sm">image1 *</div>
       <input
         className="mx-4 w-full inputStyle flex items-center justify-center  "
@@ -182,54 +178,7 @@ const CreateDress = () => {
       {errors.image4 && (
         <p className="flex danger mr-16 text-xs justify-end">{errors.image4}</p>
       )}
-      <div className="ml-6 mt-1 text-sm">image5 *</div>
-      <input
-        className="mx-4 w-full inputStyle flex items-center justify-center  "
-        placeholder="image5"
-        type="text"
-        name="image5"
-        value={input.image5}
-        onChange={(e) => handleInputChange(e)}
-      />
-      {errors.image5 && (
-        <p className="flex danger mr-16 text-xs justify-end">{errors.image5}</p>
-      )}
-      <div className="ml-6 mt-1 text-sm">image6 *</div>
-      <input
-        className="mx-4 w-full inputStyle flex items-center justify-center  "
-        placeholder="image6"
-        type="text"
-        name="image6"
-        value={input.image6}
-        onChange={(e) => handleInputChange(e)}
-      />
-      {errors.image6 && (
-        <p className="flex danger mr-16 text-xs justify-end">{errors.image6}</p>
-      )}
-      <div className="ml-6 mt-1 text-sm">image7 *</div>
-      <input
-        className="mx-4 w-full inputStyle flex items-center justify-center  "
-        placeholder="image7"
-        type="text"
-        name="image7"
-        value={input.image7}
-        onChange={(e) => handleInputChange(e)}
-      />
-      {errors.image7 && (
-        <p className="flex danger mr-16 text-xs justify-end">{errors.image7}</p>
-      )}
-      <div className="ml-6 mt-1 text-sm">image8 *</div>
-      <input
-        className="mx-4 w-full inputStyle flex items-center justify-center  "
-        placeholder="image8"
-        type="text"
-        name="image8"
-        value={input.image8}
-        onChange={(e) => handleInputChange(e)}
-      />
-      {errors.image8 && (
-        <p className="flex danger mr-16 text-xs justify-end">{errors.image8}</p>
-      )}
+
       <div className="ml-6 mt-1 text-sm">rating *</div>
       <input
         className="mx-4 w-full inputStyle flex items-center justify-center  "

@@ -1,9 +1,8 @@
 import { UUID } from "bson";
 import { Schema, model, models } from "mongoose";
-import { stringify } from "postcss";
 
 // NOTA: le falta cosas, como video por ejemplo
-const dressesSchema = new Schema({
+const coveredSchema = new Schema({
   title: {
     type: String,
     unique: true,
@@ -41,15 +40,15 @@ const dressesSchema = new Schema({
   },
 });
 
-dressesSchema.virtual("id").get(function () {
+coveredSchema.virtual("id").get(function () {
   return this._id.toHexString();
 });
 
-dressesSchema.set("toJSON", {
+coveredSchema.set("toJSON", {
   virtuals: true,
 });
 
-// dressesSchema.set("toJSON", {
+// coveredSchema.set("toJSON", {
 //   virtuals: true,
 //   versionKey: false,
 //   transform: function (doc, ret) {
@@ -57,5 +56,5 @@ dressesSchema.set("toJSON", {
 //   },
 // });
 
-//export default models.Dresses || model("Dresses", dressesSchema);
-export default model("Dresses", dressesSchema);
+//export default models.Covered || model("Covered", coveredSchema);
+export default model("Covered", coveredSchema);
