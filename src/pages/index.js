@@ -404,7 +404,7 @@ export default function Home() {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearVestido");
+          router.push("https://benve-bd.vercel.app/formVestido");
         }}
       >
         Crear Vestido
@@ -412,7 +412,7 @@ export default function Home() {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearBuzo");
+          router.push("https://benve-bd.vercel.app/formBuzo");
         }}
       >
         Crear Buzo
@@ -420,7 +420,7 @@ export default function Home() {
       <button
         className="button m-4 mt-20"
         onClick={() => {
-          router.push("https://benve-bd.vercel.app/crearBolso");
+          router.push("https://benve-bd.vercel.app/formBolso");
         }}
       >
         Crear Bolso

@@ -29,10 +29,10 @@ function validate(input) {
 
   return errors;
 }
-const CreateDress = () => {
-  const createnewDress = async () => {
+const Createbag = () => {
+  const createnewbag = async () => {
     try {
-      await fetch("https://benve-bd.vercel.app/api/vestidos/vestido8", {
+      await fetch("https://benve-bd.vercel.app/api/bolso/createBolso", {
         method: "POST",
         body: JSON.stringify(input),
         headers: {
@@ -255,12 +255,12 @@ const CreateDress = () => {
       <button
         className="button m-10"
         onClick={() => {
-          createnewDress();
+          createnewbag();
         }}
         type="submit"
         primary
       >
-        Sumbit New Dress
+        Sumbit New bag
       </button>
       <button
         className="button m-10"
@@ -277,4 +277,4 @@ const CreateDress = () => {
   );
 };
 
-export default CreateDress;
+export default Createbag;
