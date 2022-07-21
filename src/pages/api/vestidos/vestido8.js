@@ -33,7 +33,7 @@ async function handler(req, res) {
             req.body.image.push(req.body.algo[i]);
             console.log("console req.body.image", req.body.image);
           } else {
-            return;
+            continue;
           }
         }
         console.log("console re", req.body);
