@@ -17,6 +17,8 @@ async function handler(req, res) {
         console.log("console pase por aca");
         console.log("console req.body", req.body);
         req.body.image = [req.body.image1, req.body.image2];
+        console.log("console ", req.body);
+
         const newTask = new Dresses(req.body);
         const savedTask = await newTask.save();
         return res.status(201).json(savedTask);
