@@ -37,6 +37,8 @@ async function handler(req, res) {
           }
         }
         console.log("console re", req.body);
+
+        const newTask = new Bags(req.body);
         const savedTask = await newTask.save();
         return res.status(201).json(savedTask);
       } catch (error) {
