@@ -14,9 +14,8 @@ async function handler(req, res) {
       }
     case "POST":
       try {
-        console.log("console pase por aca");
-        console.log("console req.body", req.body);
-        req.body.image = [
+        req.body.image = [];
+        req.body.algo = [
           req.body.image1,
           req.body.image2,
           req.body.image3,
@@ -26,7 +25,18 @@ async function handler(req, res) {
           req.body.image7,
           req.body.image8,
         ];
-        const newTask = new Bags(req.body);
+        console.log("console req", req.body);
+
+        for (let i = 0; i < req.body.algo.length; i++) {
+          console.log("console entre");
+          if (req.body.algo[i] !== "") {
+            req.body.image.push(req.body.algo[i]);
+            console.log("console req.body.image", req.body.image);
+          } else {
+            continue;
+          }
+        }
+        console.log("console re", req.body);
         const savedTask = await newTask.save();
         return res.status(201).json(savedTask);
       } catch (error) {
