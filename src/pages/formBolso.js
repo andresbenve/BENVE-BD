@@ -32,7 +32,7 @@ function validate(input) {
 const Createbag = () => {
   const createnewbag = async () => {
     try {
-      await fetch("https://benve-bd.vercel.app/api/bolso/createBolso", {
+      await fetch("https://benve-bd.vercel.app/api/bolsos/createBolso", {
         method: "POST",
         body: JSON.stringify(input),
         headers: {

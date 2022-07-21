@@ -94,8 +94,7 @@ export const basketSlice = createSlice({
             VestFiltrados.push(action.payload.data[i]);
           }
         }
-        console.log("console VestFiltrados", VestFiltrados);
-        console.log("console action.payload.input", action.payload.input);
+
         return {
           ...state,
           vestidosFiltrados: VestFiltrados,
@@ -106,8 +105,6 @@ export const basketSlice = createSlice({
           vestidosFiltrados: "",
         };
       }
-
-      console.log("console entre aca");
     },
     resetVestidos: (state, action) => {
       return;
@@ -118,7 +115,6 @@ export const basketSlice = createSlice({
 export const { addToBasket, removeFromBasket, idChoosen, filtrarVestidos } =
   basketSlice.actions;
 
-//Selectors - This is how we pull information from the Global store slice
 export const selectItems = (state) => state.basket.items;
 export const selectTotal = (state) =>
   state.basket.items.reduce((total, item) => (total += item.price), 0);
@@ -126,44 +122,3 @@ export const selectId = (state) => state.basket.show;
 export const vestidosFiltrados = (state) => state.basket.vestidosFiltrados;
 
 export default basketSlice.reducer;
-
-// let VestFiltrados = [];
-//     if (input.longitud.length > 0 && input.color.length > 0) {
-//       console.log("console entre");
-//       for (let i = 0; i < data.length; i++) {
-//         if (
-//           data[i].longitud === input.longitud &&
-//           data[i].color === input.color
-//         ) {
-//           VestFiltrados.push(data[i]);
-//         }
-//       }
-//       console.log("console VestFiltrados", VestFiltrados);
-//       console.log("console input", input);
-//       setfiltrados(VestFiltrados);
-//       return VestFiltrados;
-//     }
-
-//     if (input.longitud.length > 0) {
-//       for (let i = 0; i < data.length; i++) {
-//         if (data[i].longitud === input.longitud) {
-//           VestFiltrados.push(data[i]);
-//         }
-//       }
-//       console.log("console VestFiltrados", VestFiltrados);
-//       console.log("console input", input);
-//       setfiltrados(VestFiltrados);
-//       return VestFiltrados;
-//     }
-//     if (input.color.length > 0) {
-//       for (let i = 0; i < data.length; i++) {
-//         if (data[i].color === input.color) {
-//           VestFiltrados.push(data[i]);
-//         }
-//       }
-//       console.log("console VestFiltrados", VestFiltrados);
-//       console.log("console input", input);
-//       setfiltrados(VestFiltrados);
-//       return VestFiltrados;
-//     }
-//     console.log("console entre aca");
