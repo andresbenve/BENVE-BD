@@ -34,9 +34,10 @@ const cupSchema = new Schema({
   video: {
     type: String,
   },
+  cantidad: 1,
   code: {
     type: Number,
-    default: 3699570,
+    default: 3699525,
   },
 });
 

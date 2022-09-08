@@ -22,7 +22,9 @@ function FooterChat() {
         ENVIAR WHATSAPP
       </div>
       <Whatsapp
-        onClick={() => router.push("https://wa.me/5491154844670")}
+        onClick={() =>
+          router.push("https://wa.me/9541154844670?text=im%am%interested")
+        }
         className="flex items-center justify-center w-full  ml-16"
       />
       <div

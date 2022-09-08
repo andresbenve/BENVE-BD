@@ -32,7 +32,7 @@ const sweatersSchema = new Schema({
   },
   code: {
     type: Number,
-    default: 3699569,
+    default: 3677732,
   },
 });
 

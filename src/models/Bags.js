@@ -35,9 +35,14 @@ const bagsSchema = new Schema({
   video: {
     type: String,
   },
+
+  cantidad: {
+    type: Number,
+    default: 1,
+  },
   code: {
     type: Number,
-    default: 3699570,
+    default: 37721,
   },
 });
 

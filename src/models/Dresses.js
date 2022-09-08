@@ -37,7 +37,7 @@ const dressesSchema = new Schema({
   },
   code: {
     type: Number,
-    default: 3699570,
+    default: 3677749,
   },
 });
 
