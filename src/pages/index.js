@@ -401,6 +401,7 @@ export default function Home() {
       </Head>
       {/* ---- TO BEGIN, delete this section and GET CODING!!! ---- */}
       <Header />
+      
       <button
         className="button m-4 mt-20"
         onClick={() => {

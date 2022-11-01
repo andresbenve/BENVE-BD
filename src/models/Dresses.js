@@ -6,7 +6,6 @@ import { stringify } from "postcss";
 const dressesSchema = new Schema({
   title: {
     type: String,
-    unique: true,
     required: true,
   },
 

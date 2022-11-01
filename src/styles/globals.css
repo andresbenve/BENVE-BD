@@ -330,3 +330,6 @@ body::-webkit-scrollbar {
 .indicatorStyles {
   margin-top: 300px;
 }
+input.placeholder {
+  text-align: center;
+}
